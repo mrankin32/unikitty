@@ -1,4 +1,10 @@
-[![Build Status](https://ec2-54-165-115-111.compute-1.amazonaws.com/buildStatus/icon?job=unikitty)](https://ec2-54-165-115-111.compute-1.amazonaws.com/job/unikitty/)
+[![Build Status](http://ec2-54-165-115-111.compute-1.amazonaws.com/buildStatus/icon?job=unikitty)](https://ec2-54-165-115-111.compute-1.amazonaws.com/job/unikitty/)
+
+# Introduction
+The application is deployed to:
+http://ec2-52-7-51-233.compute-1.amazonaws.com/
+
+The credintials for the prototype are user/password
 
 ## Getting started
 ### Running the backend with the frontend
@@ -10,13 +16,15 @@ This should start the application on port 8080. http://localhost:8080/
 
 
 ### Running the frontend only
-Nodejs and NPM must be installed
+[emberjs](http://emberjs.com/) is the framework of choice.
 
-1. Install all packages `npm install`
-2. Run the server `npm start`
-3. visit http://localhost:8000
+1. Install emberjs cli `npm install -g ember-cli`
+2. Install npm packages `npm install`
+2. Install bower packages `bower install`
+2. Run the server `ember serve`
+3. visit http://localhost:4200
 
-And to run karma tests just run `npm test`
+And to run all tests just run `ember test`
 
 
 ## How the code is organized
@@ -31,7 +39,7 @@ All `npm` packages are installed in their default location under `node_modules`.
 `bower` packages are installed under `src/main/resources/static/lib` directory.
 
 # Contribution
-## Codeing style guidelines
+## Coding style guidelines
 ### Java
 We are using the following style guidelines from google
 https://google-styleguide.googlecode.com/svn/trunk/javaguide.html
